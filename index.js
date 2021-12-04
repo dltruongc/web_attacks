@@ -21,6 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 // >>> Routes configuration
 // User route
 app.use('/users', require('./users/user.route'));
+app.use('/dashboard', require('./dashboard/dashboard.route'));
 
 // <<< Routes configuration
 

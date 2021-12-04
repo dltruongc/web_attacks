@@ -1,7 +1,13 @@
 body
   h1 Login Form
 
-  form(action="/users" method="POST") 
-    input(type="text" name="username")
-    input(type="password" name="password")
+  form(action="/users" method="POST")
+    div
+      label(for="username") Username:
+      input(type="text" id="username" name="username")
+
+    div
+      label(for="password") Password:
+      input(type="password" id="password" name="password")
+
     button(type="submit") LOGIN
